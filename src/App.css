@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_bar {
+    background-image: linear-gradient(65deg, red, rgb(255, 123, 0));
+    color: white;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list li {
+    list-style: none;
+    margin: 1rem;
+    font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.list li a {
+    font-family: Impact, sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(63, 63, 63);
+    padding: 1rem 1.7rem;
+    border-radius: 0.6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list li a:hover {
+    background-color: rgb(238, 56, 0);
+}
+
+/* main section */
+
+.main_sec {
+    display: flex;
+    width: 98%;
+    margin: auto;
+    background-color: rgb(56, 56, 56);
+    border-radius: 0.5rem;
+    height: fit-content;
+}
+.left {
+    width: 20%;
+}
+.right {
+    width: 80%;
+}
+.card {
+    background-color: rgb(223, 63, 0);
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+.card:hover {
+    background-color: black;
+}
+.details {
+    margin-top: 1.7rem;
+}
+
+.btnx {
+    padding: 1rem 2.7rem;
+    font-size: 1.1rem;
+    background-color: rgba(214, 0, 0, 0);
+    color: white;
+    text-align: center;
+
+    margin: auto;
+
+    margin-top: 0.4rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+}
+
+.right {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.top {
+    margin: 1rem;
+    background-color: rgb(230, 84, 0);
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loc {
+    margin: 0.4rem;
+}
+
+.bottom {
+    margin: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.map {
+    height: 31rem;
+    background-color: rgb(29, 29, 29);
+}
+.bt {
+    margin-top: 0rem;
+    text-align: center;
+    margin: 0rem;
+    color: white;
+    font-size: 1.2rem;
+    background-image: linear-gradient(55deg, red, orange);
+    text-decoration: none;
+    padding: 1rem 12rem;
+    font-family: Impact, sans-serif;
 }
