@@ -1,83 +1,40 @@
-import React from 'react';
+import React, { Suspense, useEffect } from "react";
+import "components/FontawsomeIcons";
+
 import "./App.css";
-export default function App() {
-  return (
-    <div>
-      <nav className="nav_bar">
-        <h1>
-          Park <b>Me</b>{" "}
-        </h1>
+import "./dark.css";
 
-        <ul className="list">
-          <li>Username </li>
-          <li>
-            <a href="#">LOGOUT</a>
-          </li>
-        </ul>
-      </nav>
+import Layout from "pages/_layouts/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import routes from "routes";
+import PageNotFound from "pages/PageNotFound";
+import Home from "pages/Home";
 
-      {/* <!--main section--> */}
-      <div className="main_sec">
-        {/* <!--Info / Predictions --> */}
-        <div className="left">
-          <div className="card">
-            <h2>Block Info</h2>
-            <div className="details">
-              <h4>parking will be free by 5pm </h4>
-            </div>
-          </div>
-          <div className="card">
-            <h2>Block Info</h2>
-            <div className="details">
-              <h4>parking will be free by 5pm </h4>
-            </div>
-          </div>
-          <div className="card">
-            <h2>Block Info</h2>
-            <div className="details">
-              <h4>parking will be free by 5pm </h4>
-            </div>
-          </div>
-          <div className="card">
-            <h2>Block Info</h2>
-            <div className="details">
-              <h4>parking will be free by 5pm </h4>
-            </div>
-          </div>
-          <div className="card">
-            <h2>Block Info</h2>
-            <div className="details">
-              <h4>parking will be free by 5pm </h4>
-            </div>
-          </div>
-          <br />
-          <div className="card">
-            <a href="#" className="btnx">
-              Load More
-            </a>
-          </div>
-        </div>
+function App() {
+    return (
+        <Router>
+            <Layout>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Switch>
+                        {routes.map((route) => (
+                            <Route
+                                path={route.path}
+                                component={route.component}
+                                key={route.path}
+                            />
+                        ))}
 
-        {/*Heat Map */}
-        <div className="right">
-          <div className="map_box">
-            <div className="top">
-              <h1>Market Parking</h1>
-              <div className="loc">
-                <h2>Margao-Goa</h2> <h4>xyz colony near xyz place 2030388</h4>
-              </div>
-            </div>
-            <div className="bottom">
-              <div className="map"></div>
+                        <Route path="/" exact>
+                            <Home />
+                        </Route>
+                        <Route>
+                            <PageNotFound />
+                        </Route>
+                    </Switch>
+                </Suspense>
+            </Layout>
+        </Router>
+    );
+}
 
-              <a href="#" className="bt">
-                SWITCH TO VIDEO
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-    </div>
-  );
-};
+export default App;

@@ -1,124 +1,191 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-}
-
-.nav_bar {
-    background-image: linear-gradient(65deg, red, rgb(255, 123, 0));
-    color: white;
-    padding: 0.4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.list {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.list li {
-    list-style: none;
-    margin: 1rem;
-    font-size: 1.2rem;
-}
-
-.list li a {
-    font-family: Impact, sans-serif;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(63, 63, 63);
-    padding: 1rem 1.7rem;
-    border-radius: 0.6rem;
-}
-
-.list li a:hover {
-    background-color: rgb(238, 56, 0);
-}
-
-/* main section */
-
-.main_sec {
-    display: flex;
-    width: 98%;
-    margin: auto;
-    background-color: rgb(56, 56, 56);
-    border-radius: 0.5rem;
-    height: fit-content;
-}
-.left {
-    width: 20%;
-}
-.right {
-    width: 80%;
-}
-.card {
-    background-color: rgb(223, 63, 0);
-    padding: 1rem;
-    margin: 1rem;
-    color: white;
-    border-radius: 0.3rem;
-    margin-bottom: 0.3rem;
-}
-.card:hover {
-    background-color: black;
-}
-.details {
-    margin-top: 1.7rem;
-}
-
-.btnx {
-    padding: 1rem 2.7rem;
-    font-size: 1.1rem;
-    background-color: rgba(214, 0, 0, 0);
-    color: white;
+.App {
     text-align: center;
-
-    margin: auto;
-
-    margin-top: 0.4rem;
-    text-decoration: none;
-    border-radius: 0.4rem;
 }
 
-.right {
-    background-color: rgb(49, 49, 49);
-    color: white;
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
 }
 
-.top {
-    margin: 1rem;
-    background-color: rgb(230, 84, 0);
-    padding: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
-.loc {
-    margin: 0.4rem;
-}
-
-.bottom {
-    margin: 1rem;
-    background-color: white;
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.map {
-    height: 31rem;
-    background-color: rgb(29, 29, 29);
+.App-link {
+    color: #61dafb;
 }
-.bt {
-    margin-top: 0rem;
-    text-align: center;
-    margin: 0rem;
-    color: white;
-    font-size: 1.2rem;
-    background-image: linear-gradient(55deg, red, orange);
-    text-decoration: none;
-    padding: 1rem 12rem;
-    font-family: Impact, sans-serif;
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card-hover {
+    opacity: 0.95;
+}
+.card-hover:hover {
+    opacity: 1;
+}
+.card-hover:hover .card-body {
+    background-color: #dddcdc;
+}
+.card-hover:hover .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.otp-field {
+    width: 38px;
+    margin-right: 10px;
+    padding-left: 12px;
+    height: 40px;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.scroll-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+.scroll-container .indicator {
+    height: 100%;
+    background: #8b0000;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #8b0000;
+    color: #fff;
+    z-index: 1;
+}
+.scroll-to-top .icon {
+    margin-top: 10px;
+    animation: scrollTop 0.5s alternate ease infinite;
+}
+@keyframes scrollTop {
+    from {
+        transform: translateY(2px);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}
+
+.custom-youtube-player {
+    position: fixed;
+    width: 450px;
+    height: 300px;
+    bottom: 40px;
+    right: 40px;
+    background: #000;
+}
+.custom-youtube-player .close,
+.custom-youtube-player .handle {
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    width: 32px;
+    height: 32px;
+    background: #000;
+    color: #fff;
+    opacity: 1;
+    padding: 3px;
+    cursor: pointer;
+}
+.custom-youtube-player .handle {
+    right: 32px;
+    padding-top: 8px;
+    cursor: move;
+}
+.fp-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f8f8f8ad;
+}
+.fp-container .fp-loader {
+    top: 30%;
+    left: 48%;
+    z-index: 1000;
+    position: absolute;
+}
+
+.battery-outer {
+    height: 210px;
+    width: 100px;
+    border: 2px solid #222;
+    padding: 4px;
+    border-radius: 7px;
+}
+.battery-inner {
+    width: 100%;
+    margin: 2px 0;
+    background-color: #01770a;
+}
+.battery-empty .battery-inner {
+    background: #8b0000;
+}
+.battery-outer::before {
+    content: "";
+    width: 24px;
+    position: absolute;
+    top: -8px;
+    height: 8px;
+    background: #222;
+    left: 49%;
+    border-radius: 4px 4px 3px 3px;
+}
+.battery-outer .battery-charging-indicator {
+    position: absolute;
+    top: 40%;
+    left: 49.2%;
+    color: #cbd71d;
+    font-size: 40px;
+    display: none;
+}
+.battery-charging .battery-outer .battery-charging-indicator {
+    display: block;
+    animation: fadeIn 0.8s infinite alternate;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.password-toogle-icon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer;
 }

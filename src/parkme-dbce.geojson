@@ -17,7 +17,8 @@
                 ]
             },
             "id": "ec5ea261-0b12-4021-8cf4-7f901d897331",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 2
         },
         {
             "type": "Feature",
@@ -34,7 +35,8 @@
                 ]
             },
             "id": "9829b9f6-fbb5-467b-be30-5daffd5c5b12",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 1
         },
         {
             "type": "Feature",
@@ -51,7 +53,8 @@
                 ]
             },
             "id": "75fc7e2a-2dbb-446e-a41a-4533412c731c",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 4
         },
         {
             "type": "Feature",
@@ -68,7 +71,8 @@
                 ]
             },
             "id": "7951c862-2044-4249-b266-b39bd0b2faf4",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 5
         },
         {
             "type": "Feature",
@@ -85,7 +89,8 @@
                 ]
             },
             "id": "021a9c18-2923-42c4-ad1b-e161c4198a92",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 1
         },
         {
             "type": "Feature",
@@ -102,7 +107,8 @@
                 ]
             },
             "id": "a8204156-9e34-4fae-8054-905ed324e9fd",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 3
         },
         {
             "type": "Feature",
@@ -119,7 +125,8 @@
                 ]
             },
             "id": "a5b701d7-f1db-4a61-9349-977588f4c8e7",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 1
         },
         {
             "type": "Feature",
@@ -136,7 +143,8 @@
                 ]
             },
             "id": "1e1cd59d-8665-4f0e-a063-737c1ce45374",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 2
         },
         {
             "type": "Feature",
@@ -153,7 +161,8 @@
                 ]
             },
             "id": "6520fd1d-9945-4003-9437-047b3bde8ca5",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 5
         },
         {
             "type": "Feature",
@@ -170,7 +179,8 @@
                 ]
             },
             "id": "01c5f4e6-91e2-4cb5-9d8d-0cf307151df5",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 5
         },
         {
             "type": "Feature",
@@ -187,7 +197,8 @@
                 ]
             },
             "id": "d4996426-bff7-412c-9329-6a597cf33683",
-            "properties": { "name": "" }
+            "properties": { "name": "" },
+            "Count": 5
         }
     ]
 }
